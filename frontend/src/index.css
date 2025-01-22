@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.message-box {
+  flex-grow: 1;
+  padding: 1rem;
+  gap: 0.25rem;
+  overflow-y: auto; /* Enable vertical scrolling */
+  max-height: 100%;
+  background-color: #1d4ed8; /* Ensure consistent blue background */
+  scrollbar-width: none; /* Hide scrollbar in Firefox */
+  -ms-overflow-style: none; /* Hide scrollbar in IE/Edge */
+  scroll-behavior: smooth;
+}
+
+.message-box::-webkit-scrollbar {
+  display: none; /* Hide scrollbar in WebKit browsers */
+}
